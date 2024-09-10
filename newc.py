@@ -1,7 +1,7 @@
 while True:
     n1 = input("Primeiro numero:")
     n2 = input("Segundo numero:")
-    operacao = input("o q deseja fazer: 1-+ \n2-- \n3-* \n4-/")
+    operacao = input("O que deseja fazer: 1-+ \n2-- \n3-* \n4-/ \n")
 
     n_validos = None
 
@@ -19,10 +19,10 @@ while True:
     op_permitidos = '+-*/'
 
     if operacao not in op_permitidos:
-        print("erro, por favor insira uma operacao permitida")
+        print("erro, por favor insira uma operação permitida")
         continue
     if len(operacao) > 1:
-        print("erro, por favor insira apenas uma operacao")
+        print("erro, por favor insira apenas uma operação")
         continue
 
     if operacao == '+':
