@@ -1,7 +1,7 @@
 while True:
     n1 = input("Primeiro numero:")
     n2 = input("Segundo numero:")
-    operacao = input("O que deseja fazer: 1-+ \n2-- \n3-* \n4-/ \n")
+    operacao = input("O que deseja fazer: + \n- \n* \n/ \n")
 
     n_validos = None
 
@@ -31,9 +31,13 @@ while True:
         print(f'{n1_flo} - {n2_flo} = {n1_flo - n2_flo}')
     elif operacao == '*':
         print(f'{n1_flo} * {n2_flo} = {n1_flo * n2_flo}')
+    elif operacao == '/':
+        if n2_flo == 0:
+            print("Erro: Não é possível dividir por zero.")
     else:
         print(f'{n1_flo} / {n2_flo} = {n1_flo / n2_flo}')
 
     sair = input("Deseja sair? Sim \nNão \n")
     if sair == "Sim":
+        print("Você saiu!")
         break
